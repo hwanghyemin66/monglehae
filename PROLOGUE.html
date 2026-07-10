@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>몽글몽글해</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="./images/main_page/favicon.png" type="image/x-icon">
+
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--font-->
+    <link rel="stylesheet" href="./css/font.css">
+
+    <!--meta tag-->
+    <meta property="og:title" content="몽글몽글해">
+    <meta property="og:description" content="반려동물 동반가능 펜션">
+    <meta property="og:image" content="이미지 절대경로"><!--이미지 크기 1200x630-->
+    <meta property="og:url" content="사이트 절대주소">
+    <meta property="og:type" content="website">
+    <!--gsap / 마우스호버, 장난감 충돌 애니메이션 -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/PROLOGUE.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <h1><a href="./index.html#main_banner"><img src="./images/main_page/logo.svg" alt="로고"></a></h1>
+            <ul class="nav">
+                <li>
+                    <a href="./PROLOGUE.html">PROLOGUE</a>
+                    <ul class="sub_menu">
+                        <li><a href="./PROLOGUE.html#about">펜션인사말</a></li>
+                        <li><a href="./PROLOGUE.html#special">증정품&기념품</a></li>
+                        <li><a href="./PROLOGUE.html#photo">포토</a></li>
+                        <li><a href="./PROLOGUE.html#pickup">픽업서비스</a></li>
+                        <li><a href="./PROLOGUE.html#location">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./ROOMS.html">ROOMS</a>
+                    <ul class="sub_menu">
+                        <li><a href="./ROOMS.html#rooms_preview">객실전체보기</a></li>
+                        <li><a href="./ROOMS.html#room_guide">객실배치도</a></li>
+                        <li><a href="./ROOMS_1-2.html">멍멍룸</a></li>
+                        <li><a href="./ROOMS_1-2.html">냥냥룸</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./SPECIAL.html">SPECIAL</a>
+                    <ul class="sub_menu">
+                        <li><a href="./SPECIAL.html">카페</a></li>
+                        <li><a href="./SPECIAL.html">놀이시설</a></li>
+                        <li><a href="./SPECIAL.html">포토존</a></li>
+                        <li><a href="./SPECIAL.html">증정품</a></li>
+                        <li><a href="./SPECIAL.html">펫샤워룸</a></li>
+                        <li><a href="./SPECIAL.html">펫드라이룸</a></li>
+                        <li><a href="./SPECIAL.html">어메니티</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./COMMUNITY.html">COMMUNITY</a>
+                    <ul class="sub_menu">
+                        <li><a href="./COMMUNITY.html">공지사항</a></li>
+                        <li><a href="./COMMUNITY-2.html">이용후기</a></li>
+                        <li><a href="./COMMUNITY-3.html">여행지</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="reservation">
+                <li><a href="#"><img src="./images/main_page/header-reservation.svg" alt="예약하기"></a></li>
+                <li class="reserve_text"><a href="#">예약하기</a></li>
+            </ul>
+        </div>
+    </header><!--header-->
+
+    <div>
+        <main>
+            <section id="main_banner">
+                <div class="mb_text">
+                    <h1 data-aos="fade-up">PROLOGUE</h1>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper mb_swiper">
+                    <div class="swiper-wrapper mb_wrapper">
+                        <div class="swiper-slide"><img src="./images/PROLOGUE_page/prologue-main-banner1.jpg"
+                                alt="메인배너 이미지1"></div>
+                        <div class="swiper-slide"><img src="./images/PROLOGUE_page/prologue-main-banner2.jpg"
+                                alt="메인배너 이미지2"></div>
+                        <div class="swiper-slide"><img src="./images/PROLOGUE_page/prologue-main-banner3.jpg"
+                                alt="메인배너 이미지3"></div>
+                        <div class="swiper-slide"><img src="./images/PROLOGUE_page/prologue-main-banner4.jpg"
+                                alt="메인배너 이미지4"></div>
+                        <div class="swiper-slide"><img src="./images/PROLOGUE_page/prologue-main-banner5.jpg"
+                                alt="메인배너 이미지5"></div>
+                        <div class="swiper-slide"><img src="./images/PROLOGUE_page/prologue-main-banner6.jpg"
+                                alt="메인배너 이미지6"></div>
+                        <div class="swiper-slide"><img src="./images/PROLOGUE_page/prologue-main-banner7.jpg"
+                                alt="메인배너 이미지7"></div>
+                        <div class="swiper-slide"><img src="./images/PROLOGUE_page/prologue-main-banner8.jpg"
+                                alt="메인배너 이미지8"></div>
+
+                    </div>
+                    <div class="swiper-button-next mb_next"></div>
+                    <div class="swiper-button-prev mb_prev"></div>
+                    <div class="swiper-pagination mb_pag"></div>
+                </div>
+            </section><!--main_banner-->
+
+            <section id="about">
+                <div data-aos="fade-up">
+                    <h5>반려견, 반려모 동반이 가능한 독채 풀빌라
+                    </h5>
+                    <h2>몽글몽글해 펫펜션</h2>
+                    <img src="./images/PROLOGUE_page/about_line.svg" alt="#">
+                    <p>‘몽글몽글해 펫펜션’은 반려견, 반려묘가 함께 머물 수 있는 곳입니다. <br>
+                        이곳은 해운대 바다를 가까이에서 느끼며 <br>
+                        소중한 가족, 친구, 연인 그리고 반려동물과 편안한 시간을 보낼 수 있도록 마련되었습니다. <br> <br>
+
+                        반려견과 반려묘를 위한 전용 놀이공간은 물론, <br>
+                        몽글몽글해만의 특별한 증정품까지 준비하여 더욱 즐거운 여행을 완성해 드립니다. <br>
+                        이곳에서의 하루가 반려동물과 함께한 소중한 추억으로 오래도록 마음에 남기를 바랍니다.</p>
+                </div>
+            </section><!--about-->
+
+            <section id="special">
+                <div class="inner">
+                    <div class="title" data-aos="zoom-in">
+                        <img src="./images/PROLOGUE_page/special-title-icon.svg" alt="#">
+                        <h2>몽글몽글해의 특별함</h2>
+                        <h5>몽글몽글해에서 반려동물과 더욱 즐거운 시간을 보내세요.</h5>
+                    </div>
+
+                    <div class="special_box" data-aos-delay="200">
+                        <div class="img_box" data-aos="fade-left">
+                            <img src="./images/PROLOGUE_page/special-img1.jpg" alt="야외 운동장">
+                        </div>
+                        <ul class="text_box" data-aos="fade-right">
+                            <li class="text_box_title">
+                                <p>야외 운동장</p>
+                                <img src="./images/PROLOGUE_page/special-text-title-img1.png" alt="#">
+                            </li>
+                            <li>
+                                <img src="./images/PROLOGUE_page/special-text-line.png" alt="#" class="s_line">
+                                반려견을 위한 넓은 야외 운동장에서 <br>
+                                마음껏 뛰어놀며 특별한 추억을 만들어보세요. <br><br>
+                                Let your dog run freely <br>
+                                in our spacious outdoor playground <br> and create unforgettable memories
+                                together.
+                            </li>
+                        </ul>
+                    </div><!--special_box1-->
+
+                    <div class="special_box" data-aos-delay="400">
+                        <ul class="text_box right_text_box" data-aos="fade-left">
+                            <li class="text_box_title">
+                                <p>포토존</p>
+                                <img src="./images/PROLOGUE_page/special-text-title-img2.png" alt="#">
+                            </li>
+                            <li>
+                                <img src="./images/PROLOGUE_page/special-text-line.png" alt="#" class="r_s_line">
+                                사랑스러운 반려견&반려묘의 사진을 <br>
+                                잔뜩 찍어서 추억을 남겨보세요 <br><br>
+
+                                Capture plenty of adorable <br>
+                                photos of your beloved dog or cat <br>
+                                and preserve precious memories of your stay.
+                            </li>
+                        </ul>
+                        <div class="img_box" data-aos="fade-right">
+                            <img src="./images/PROLOGUE_page/special-img2.jpg" alt="포토존">
+                        </div>
+                    </div><!--special_box2-->
+
+                    <div class="special_box" data-aos-delay="600">
+                        <div class="img_box" data-aos="fade-left">
+                            <img src="./images/PROLOGUE_page/special-img3.jpg" alt="청결관리">
+                        </div>
+
+                        <ul class="text_box" data-aos="fade-right">
+                            <li class="text_box_title">
+                                <p>청결관리</p>
+                                <img src="./images/PROLOGUE_page/special-text-title-img3.png" alt="청결관리">
+                            </li>
+                            <li>
+                                <img src="./images/PROLOGUE_page/special-text-line.png" alt="#" class="s_line">
+                                몽글몽글해는 매일 방역과 청소가 이루어지며 <br>
+                                청결함을 유지하기 위해 노력하고 있습니다. <br> <br>
+
+                                we carry out daily cleaning and sanitation <br>
+                                to maintain a clean, comfortable <br>
+                                and pleasant environment.
+                            </li>
+
+                        </ul>
+                    </div><!--special_box3-->
+
+                </div><!--special-->
+
+
+            </section><!--special-->
+
+            <section id="ocean">
+                <svg class="reverse_wave" viewBox="0 0 1920 220" preserveAspectRatio="none">
+                    <path fill="#feede3"
+                        d="M0,190 C180,120 420,40 700,70 C950,100 1200,190 1450,180 C1650,170 1800,180 1920,150 L1920,220 L0,220 Z" />
+                </svg>
+                <div class="ocean_wrap">
+                    <img src="images/PROLOGUE_page/sea-swim-ring1.png" alt="튜브1" class="float tube1 obstacle">
+                    <img src="images/PROLOGUE_page/sea-swim-ring2.png" alt="튜브2" class="float tube2 obstacle">
+                    <img src="images/PROLOGUE_page/sea-swim-ball1.png" alt="비치볼1" class="float ball1 obstacle">
+                    <img src="images/PROLOGUE_page/sea-swim-ball2.png" alt="비치볼2" class="float ball2 obstacle">
+                    <img src="./images/PROLOGUE_page/sea-animal.png" alt="튜브 위 동물" class="dogcat">
+                    <p class="main_text">
+                        몽글몽글해에서 쉬어가세요
+                    </p>
+                </div><!--ocean_wrap--><svg class="wave" viewBox="0 0 1920 220" preserveAspectRatio="none">
+                    <path fill="#fff4de"
+                        d="M0,190 C180,120 420,40 700,70 C950,100 1200,190 1450,180 C1650,170 1800,180 1920,150 L1920,220 L0,220 Z" />
+                </svg>
+            </section>
+
+
+            <section id="gift">
+                <div class="gift_box">
+                    <img src="./images/PROLOGUE_page/gift-cat.png" alt="deco2" class="cat_deco" data-aos="fade-right"
+                        data-aos-delay="200">
+                    <img src="./images/PROLOGUE_page/gift-welcome-gift-img.jpg" alt="간식바구니" class="left_img">
+                    <div class="welcom_gift_text_box" data-aos="flip-left" data-aos-duration="2000">
+                        <img src="./images/PROLOGUE_page/gift-title-icon.png" alt="선물">
+                        <p class="sub_title">WELCOME GIFT</p>
+                        <h2>몽글몽글해만의 <span>특별한 선물</span></h2>
+                        <p>반려견·반려묘를 위해 맛있는 <b>영양 간식</b>을 준비했습니다. <br>
+                            소중한 반려동물과 함께 더욱 즐거운 추억을 만들어 보세요!</p>
+                    </div><!--welcome-gift-text-box-->
+                    <img src="./images/PROLOGUE_page/gift-party-decoration.png" alt="deco1" class="party_deco">
+                </div>
+
+                <div class="product">
+                    <div class="line_animation">
+                        <div class="title" data-aos="zoom-in">
+                            <img src="./images/PROLOGUE_page/souvenir-title-icon.svg" alt="#">
+                            <h2>몽글몽글해의 기념품</h2>
+                            <h5>다양한 반려동물 용품을 몽글몽글 카페에서 구매하실 수 있습니다.</h5>
+                        </div>
+                        <img src="./images/PROLOGUE_page/gift-left-line.svg" alt="" class="title_left_line">
+                        <img src="./images/PROLOGUE_page/gift-right-line.svg" alt="" class="title_right_line">
+                    </div><!--타이틀 양옆에 라인 애니메이션-->
+
+                    <div class="inner">
+                        <div class="cafe_img">
+                            <img src="./images/PROLOGUE_page/gift-souvenir-cafe.png" alt="카페이미지"
+                                data-aos="fade-up-right">
+                            <img src="./images/PROLOGUE_page/souvenir-dog.png" alt="dog" class="souvenir_dog"
+                                data-aos="fade-right">
+
+                        </div>
+                        <div class="product_img" data-aos="fade-up-left">
+                            <div class="img_border">
+                                <img src="./images/PROLOGUE_page/gift-souvenir1.png" alt="여행키트">
+                                <div class="hover_box">
+                                    <p>몽글몽글 여행키트</p>
+                                    <img src="./images/PROLOGUE_page/product_hover_line.png" alt="#" class="hover_line">
+                                    <p>샴푸, 트리트먼트, 비타민C앰플</p>
+                                </div>
+                            </div>
+                            <div class="img_border">
+                                <img src="./images/PROLOGUE_page/gift-souvenir2.png" alt="배변봉투">
+                                <div class="hover_box">
+                                    <p>몽글몽글 배변봉투</p>
+                                    <img src="./images/PROLOGUE_page/product_hover_line.png" alt="#" class="hover_line">
+                                    <p>친환경 배변봉투</p>
+                                </div>
+                            </div>
+                            <div class="img_border">
+                                <img src="./images/PROLOGUE_page/gift-souvenir3.png" alt="덴탈껌">
+                                <div class="hover_box">
+                                    <p>몽글몽글 덴탈껌</p>
+                                    <img src="./images/PROLOGUE_page/product_hover_line.png" alt="#" class="hover_line">
+                                    <p>딸기맛, 치즈맛, 우유맛</p>
+                                </div>
+                            </div>
+                            <div class="img_border">
+                                <img src="./images/PROLOGUE_page/gift-souvenir4.png" alt="츄르">
+                                <div class="hover_box">
+                                    <p>몽글몽글 냠냠츄르</p>
+                                    <img src="./images/PROLOGUE_page/product_hover_line.png" alt="#" class="hover_line">
+                                    <p>연어맛, 참치맛</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--gift-->
+
+            <section id="photo">
+                <div class="inner">
+                    <div class="title" data-aos="zoom-in">
+                        <img src="./images/PROLOGUE_page/photo-title-icon.svg" alt="#">
+                        <h2>PHOTO</h2>
+                        <h5>함께라서 더욱 특별한 순간 <br>
+                            몽글몽글해에서의 행복한 추억을 만나보세요!</h5>
+                    </div>
+                    <div class="swiper_container" data-aos="flip-up">
+                        <!-- Swiper -->
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2 photo_swiper">
+                            <div class="swiper-wrapper photo_wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/PROLOGUE_page/photo-big-1.jpg" />
+                                </div>
+                                <div class="swiper-slide photo_wrapper">
+                                    <img src="./images/PROLOGUE_page/photo-big-2.jpg" />
+                                </div>
+                                <div class="swiper-slide photo_wrapper">
+                                    <img src="./images/PROLOGUE_page/photo-big-3.jpg" />
+                                </div>
+                                <div class="swiper-slide photo_wrapper">
+                                    <img src="./images/PROLOGUE_page/photo-big-4.jpg" />
+                                </div>
+                                <div class="swiper-slide photo_wrapper">
+                                    <img src="./images/PROLOGUE_page/photo-big-5.jpg" />
+                                </div>
+                                <div class="swiper-slide photo_wrapper">
+                                    <img src="./images/PROLOGUE_page/photo-big-6.jpg" />
+                                </div>
+                                <div class="swiper-slide photo_wrapper">
+                                    <img src="./images/PROLOGUE_page/photo-big-7.png" />
+                                </div>
+                                <div class="swiper-slide photo_wrapper">
+                                    <img src="./images/PROLOGUE_page/photo-big-8.jpg" />
+                                </div>
+                                <div class="swiper-slide photo_wrapper">
+                                    <img src="./images/PROLOGUE_page/photo-big-9.jpg" />
+                                </div>
+                                <div class="swiper-slide photo_wrapper">
+                                    <img src="./images/PROLOGUE_page/photo-big-10.jpg" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pag">
+                            <div thumbsSlider="" class="swiper mySwiper photo_swiper_thumbs">
+                                <div class="swiper-wrapper photo_swiper_warpper">
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/mini-photo-1.png" />
+                                    </div>
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/photo2.jpg" />
+                                    </div>
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/photo3.jpg" />
+                                    </div>
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/photo4.jpg" />
+                                    </div>
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/photo5.jpg" />
+                                    </div>
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/photo6.jpg" />
+                                    </div>
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/photo7.jpg" />
+                                    </div>
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/photo8.jpg" />
+                                    </div>
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/photo9.jpg" />
+                                    </div>
+                                    <div class="swiper-slide photo_slide">
+                                        <img src="./images/PROLOGUE_page/photo10.jpg" />
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-pagination photo_pag"></div>
+                            <div class="swiper-button-next photo_next"></div>
+                            <div class="swiper-button-prev photo_prev"></div>
+                        </div>
+
+
+                    </div><!--swiper_container-->
+                </div><!--inner-->
+            </section>
+
+            <section id="pickup">
+                <div class="inner">
+                    <div class="title" data-aos="zoom-in">
+                        <img src="./images/PROLOGUE_page/pickup-title-icon.svg" alt="픽업로고">
+                        <h2>PICK-UP SERVICE</h2>
+                        <h5>차량 없이 방문하는 고객님을 위한
+                            무료 픽업 서비스</h5>
+                    </div><!--title-->
+
+
+                    <div class="pickup_img_box" data-aos="zoom-out">
+                        <video src="./images/PROLOGUE_page/pickup.mp4" autoplay muted loop></video>
+                        <img src="./images/PROLOGUE_page/pickup-dog.png" alt="운전하는 강아지" class="drive_dog">
+                    </div>
+
+                    <p class="caption" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">몽글몽글해에서는
+                        <span>무료 픽업 서비스</span>를 제공합니다.
+                    </p>
+
+                    <div class="pickup_wrap">
+                        <div class="pickup_box" data-aos="fade-down" data-aos-delay="200">
+                            <img src="./images/PROLOGUE_page/pickup-mini-icon1.png" alt="픽업이미지">
+                            <div class="pickup_text_box">
+                                <h4>픽업 장소</h4>
+                                <img src="./images/PROLOGUE_page/pickup-line.png" alt="">
+                                <p class="pickup_text">2호선 <span>해운대역</span> 5번 출구 앞</p>
+                            </div>
+                        </div>
+
+                        <div class="pickup_box pickup_box2" data-aos="fade-down" data-aos-delay="400">
+                            <img src="./images/PROLOGUE_page/pickup-mini-icon2.png" alt="">
+                            <div class="pickup_text_box">
+                                <h4>이용 가능 시간</h4>
+                                <img src="./images/PROLOGUE_page/pickup-line.png" alt="">
+                                <p class="pickup_text">14:30 ~ 18:00</p>
+                            </div>
+                        </div>
+
+                        <div class="pickup_box pickup_box3" data-aos="fade-down" data-aos-delay="600">
+                            <img src="./images/PROLOGUE_page/pickup-mini-icon3.png" alt="">
+                            <div class="pickup_text_box">
+                                <h4>예약 안내</h4>
+                                <img src="./images/PROLOGUE_page/pickup-line.png" alt="">
+                                <p class="pickup_text">010-1234-5678</p>
+                            </div>
+                        </div><!--box3-->
+                    </div><!--pickup_wrap-->
+                </div><!--inner-->
+                <p class="pickup_info_text" data-aos="fade-right" data-aos-delay="800">반려동물과 보호자 모두 안전하고 편안한 여행이 되도록 최선을
+                    다하겠습니다.</p>
+            </section><!--pickup-->
+
+
+            <section id="location">
+                <div class="inner">
+                    <div class="title" data-aos="zoom-in">
+                        <img src="./images/PROLOGUE_page/location-title-icon.svg" alt="#">
+                        <h2>LOCATION</h2>
+                        <h5>몽글몽글해 펜션으로 오시는 길</h5>
+                    </div><!--title-->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1539.429784823719!2d129.1600708215749!3d35.15816592680554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688d5c0efe075f%3A0x9963b1d5c163ac98!2z7ZW07Jq064yA7ZW07IiY7JqV7J6l!5e0!3m2!1sko!2skr!4v1782285065973!5m2!1sko!2skr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin" data-aos="zoom-out"
+                        data-aos-delay="0"></iframe>
+                    <div class="location_search" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-delay="200">
+                        <ul>
+                            <li><img src="./images/PROLOGUE_page/location-mini-icon1.png" alt="#"></li>
+                            <li class="orange_text">주소</li>
+                            <li>부산광역시 해운대구 해운대해변로</li>
+                        </ul>
+                        <ul>
+                            <li><img src="./images/PROLOGUE_page/location-mini-icon2.png" alt="#"></li>
+                            <li class="orange_text">검색</li>
+                            <li>몽글몽글해 펫펜션</li>
+                        </ul>
+                    </div><!--location_search-->
+
+                    <div class="accordion-container">
+
+                        <!-- 대중교통 -->
+                        <div class="accordion-item">
+                            <div class="accordion-title">
+                                <span class="location_list">대중교통</span>
+                                <span class="arrow">
+                                    <img src="./images/PROLOGUE_page/location-down.png" alt="">
+                                </span>
+                            </div>
+
+                            <div class="accordion-content">
+                                <div class="content-box">
+                                    <p><img src="./images/PROLOGUE_page/location-train-con.png" alt="지하철이용시"></p>
+                                    <p>
+                                        지하철 2호선 해운대역에서 하차 <br>
+                                        3, 5번 출구
+                                    </p>
+                                </div>
+
+                                <img src="./images/PROLOGUE_page/location-line.png" alt="">
+
+                                <div class="content-box">
+                                    <p><img src="./images/PROLOGUE_page/location-bus-icon.png" alt="버스이용시"></p>
+
+                                    <div>
+                                        <p>해운대해수욕장 하차</p>
+
+                                        <ul class="bus_list">
+                                            <li>
+                                                <p><img src="./images/PROLOGUE_page/location-blue-bus.png" alt=""></p>
+                                                <p>간선버스 - 공항리무진1(7100)</p>
+                                            </li>
+
+                                            <li>
+                                                <p><img src="./images/PROLOGUE_page/location-green-bus.png" alt=""></p>
+                                                <p>지선버스 - 185, 307</p>
+                                            </li>
+
+                                            <li>
+                                                <p><img src="./images/PROLOGUE_page/location-red-bus.png" alt=""></p>
+                                                <p>광역버스 - 1003, 7000</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!--accordion-content-->
+                        </div>
+
+                        <!-- 김해국제공항 -->
+                        <div class="accordion-item">
+                            <div class="accordion-title">
+                                <span class="location_list">김해국제공항</span>
+                                <span class="arrow">
+                                    <img src="./images/PROLOGUE_page/location-down.png" alt="">
+                                </span>
+                            </div>
+
+                            <div class="accordion-content">
+                                <div class="content-box train_margin">
+                                    <p><img src="./images/PROLOGUE_page/location-train-con.png" alt="지하철이용시"></p>
+                                    <p>
+                                        부산김해경전철 공항역 탑승 <br>
+                                        소요시간 : 약 1시간 15분
+                                    </p>
+                                </div>
+
+                                <img src="./images/PROLOGUE_page/location-line.png" alt="">
+
+                                <div class="content-box">
+                                    <p><img src="./images/PROLOGUE_page/location-bus-icon.png" alt="버스이용시"></p>
+
+                                    <div>
+                                        <p>국제선청사 정류장에서 탑승 <br>
+                                            → 307, 공항리무진1(7100) <br>
+                                            소요시간 : 약 1시간 20분</p>
+
+
+                                    </div>
+                                </div>
+                            </div><!--accordion-content-->
+                        </div>
+
+                        <!-- 자가용 -->
+                        <div class="accordion-item">
+                            <div class="accordion-title">
+                                <span class="location_list">자가용</span>
+                                <span class="arrow">
+                                    <img src="./images/PROLOGUE_page/location-down.png" alt="">
+                                </span>
+                            </div>
+
+                            <div class="accordion-content column_content">
+                                <p class="orange_box">자차 이용 시</p>
+                                <p>펜션 앞 주차장 이용</p>
+
+                            </div><!--accordion-content 주차장-->
+                        </div>
+
+
+                        <!-- 픽업 서비스 -->
+                        <div class="accordion-item">
+                            <div class="accordion-title">
+                                <span class="location_list">픽업 서비스</span>
+                                <span class="arrow">
+                                    <img src="./images/PROLOGUE_page/location-down.png" alt="">
+                                </span>
+                            </div>
+
+                            <div class="accordion-content column_content">
+                                <p class="orange_box">픽업 서비스 이용 시</p>
+                                <p>미리 예약 시 이용 가능 <br>
+                                    픽업 장소 - 2호선 해운대역 5번 출구 앞 <br>
+                                    이용 가능 시간 - 14:30 ~ 18:00 <br>
+                                    문의 및 예약 - 010.1234.5678</p>
+
+                            </div><!--accordion-content 픽업서비스-->
+                        </div>
+                    </div>
+                </div><!--inner-->
+            </section>
+        </main>
+
+        <footer id="footer">
+            <img src="./images/main_page/footer-img.png" alt="푸터이미지" class="footer_img">
+
+            <div class="footer_text_box">
+                <p><a href="./index.html#main_banner"><img src="./images/main_page/logo-white.svg" alt="로고"></a></p>
+                <ul class="footer_text">
+                    <li>
+                        <p>부산 해운대구 해운대해변로</p>
+                        <p>대표 : 홍길동 ㅣ 사업자등록번호 : 123-45-67890</p>
+                        <p>예약전화 : 010-1234-5678</p>
+                    </li>
+                    <li>COPYRIGHTⓒ몽글몽글해 ALL RIGHTS RESERVE</li>
+                </ul>
+            </div>
+        </footer><!--footer-->
+    </div><!--main감싸고있는 div-->
+
+    <div class="right_fix_btn">
+        <a href="#"><img src="./images/main_page/fix-btn1.png" alt="문의하기" class="ask_btn"></a>
+        <a href="#main_banner"><img src="./images/main_page/fix_btn2.png" alt="올라가기" class="up_btn"></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!--aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--js-->
+    <script src="./js/prologue.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1500,
+        });
+    </script>
+
+</body>
+
+</html>

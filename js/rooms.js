@@ -1,0 +1,58 @@
+const header = document.querySelector("#header");
+const banner = document.querySelector("#main_banner"); // 메인 배너 영역
+
+window.addEventListener("scroll", () => {
+    const bannerHeight = banner.offsetHeight;
+
+    if (window.scrollY > bannerHeight) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+
+
+
+
+
+const information = document.querySelector("#information");
+
+const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        information.classList.add("active");
+    }
+}, {
+    threshold: 0.2
+});
+
+observer.observe(information);
+
+
+//dot 이동
+const dot = document.querySelector(".dot");
+
+const all = document.querySelector(".bar_bold_text");
+const dog = document.querySelector(".bar_dog_room");
+const cat = document.querySelector(".bar_cat_room");
+
+// 객실 전체 보기
+all.addEventListener("mouseenter", () => {
+    dot.style.left = "63px";
+});
+
+// 멍멍룸
+dog.addEventListener("mouseenter", () => {
+    dot.style.left = "175px";
+});
+dog.addEventListener("mouseleave", () => {
+    dot.style.left = "63px";
+});
+
+// 냥냥룸
+cat.addEventListener("mouseenter", () => {
+    dot.style.left = "260px";
+});
+cat.addEventListener("mouseleave", () => {
+    dot.style.left = "63px";
+});
