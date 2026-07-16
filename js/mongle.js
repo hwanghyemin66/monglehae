@@ -12,8 +12,38 @@ window.addEventListener("scroll", () => {
 });
 
 
+//rooms 스와이퍼
+ var swiper = new Swiper(".rooms_swiper", {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            centeredSlides: true,
 
+            navigation: {
+                nextEl: ".rooms_next",
+                prevEl: ".rooms_prev",
+            },
 
+            loop: true,
+        });
+
+//tour 스와이퍼
+ var swiper = new Swiper(".tour_swiper", {
+            slidesPerView: 5,
+            spaceBetween: 50,
+            centeredSlides: true,
+
+            navigation: {
+                nextEl: ".tour_next",
+                prevEl: ".tour_prev",
+            },
+
+            loop: true,
+        });
+
+//aos
+ AOS.init({
+            duration: 1000,
+        });
 
 
 //선 애니메이션
@@ -28,3 +58,13 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(information);
+
+
+//빈 a태그 올라가지 않게 하기
+const links = document.querySelectorAll('a[href="#"]');
+
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+  });
+});
