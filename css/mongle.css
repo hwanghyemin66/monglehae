@@ -576,6 +576,7 @@ h5 {
     position: relative;
 }
 
+
 .tour_slide {
     border: 1px solid #E86E2F;
     width: 272px;
@@ -748,6 +749,47 @@ h5 {
     }
 }
 
+/*투어 비행기*/
+.plane1,
+.plane2{
+    position: absolute;
+}
+
+.plane1{
+    top: 150px;
+    left: 450px;
+    animation: fly 8s linear infinite;
+}
+
+.plane2{
+    top: 250px;
+    right: 400px;
+    animation: fly 4s linear infinite;
+}
+
+@keyframes fly{
+    0% {
+        transform: translate(0, 0) rotate(-4deg);
+    }
+
+    25% {
+        transform: translate(8px, -10px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translate(0, -20px) rotate(2deg);
+    }
+
+    75% {
+        transform: translate(-8px, -10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(-4deg);
+    }
+}
+
+
 /*---------
   예약하기
   -------*/
@@ -865,8 +907,7 @@ h5 {
     height: 290px;
     background-color: #4abfcb;
     box-sizing: border-box;
-    border-top: 2px solid #111;
-
+    border-top: 2px solid #685F50;
 }
 
 #footer .footer_text_box li {

@@ -14,7 +14,6 @@ img,
 video,
 iframe {
     display: block;
-    max-width: 100%;
 }
 
 ol,
@@ -29,7 +28,6 @@ body {
     /* font-family: 'NostalgicCocochoitoon'; */
     min-width: 1450px;
     line-height: 150%;
-    overflow-x: hidden;
 }
 
 .inner {
@@ -91,7 +89,7 @@ h5 {
   ---------*/
 #header {
     background-color: rgba(255, 244, 222, 50%);
-     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
     width: 100%;
     position: fixed;
     z-index: 9999;
@@ -119,10 +117,11 @@ h5 {
 #header>.inner>.nav>li>a {
     display: inline-block;
     padding: 28px 0;
-    
+
     color: #fff;
     font-weight: bold;
-    text-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);;
+    text-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+    ;
 }
 
 #header .reservation {
@@ -202,7 +201,7 @@ h5 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.47);
     z-index: 99;
 }
@@ -267,16 +266,16 @@ h5 {
 }
 
 .bar_caffe:hover,
- .bar_play:hover,
- .bar_photozone:hover,
- .bar_gift:hover,
- .bar_petshower:hover,
- .bar_petdry:hover,
- .bar_amenity:hover{
+.bar_play:hover,
+.bar_photozone:hover,
+.bar_gift:hover,
+.bar_petshower:hover,
+.bar_petdry:hover,
+.bar_amenity:hover {
     font-weight: bold;
 }
 
-.bar_bold{
+.bar_bold {
     font-weight: bold;
 }
 
@@ -322,14 +321,30 @@ cafe 카페
     position: relative;
 }
 
-.line{
+.line {
     clip-path: inset(0 0 100% 0);
-    animation: reveal 8s ease forwards;
+    animation:
+        reveal 0.8s ease forwards,
+        ani 3s ease-in-out 0.8s infinite;
 }
 
-@keyframes reveal{
-    to{
+@keyframes reveal {
+    to {
         clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes ani {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -661,6 +676,11 @@ cafe 카페
 --------*/
 #footer {
     position: relative;
+    height: 290px;
+    background-color: #4abfcb;
+    box-sizing: border-box;
+    border-top: 2px solid #685F50;
+
 }
 
 #footer .footer_text_box li {
@@ -676,7 +696,7 @@ cafe 카페
     font-size: 13px;
     font-weight: bold;
     position: relative;
-     padding: 4vw 0 4vw 5vw;
+    padding: 77px 0 77px 96px;
 }
 
 #footer ul {
@@ -691,8 +711,7 @@ cafe 카페
 .footer_img {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
 
-    width: 100%;
     height: auto;
 }

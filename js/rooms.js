@@ -14,8 +14,6 @@ window.addEventListener("scroll", () => {
 
 
 
-
-
 const information = document.querySelector("#information");
 
 const observer = new IntersectionObserver((entries) => {
@@ -28,6 +26,10 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(information);
 
+//aos
+ AOS.init({
+            duration: 1000,
+        });
 
 //dot 이동
 const dot = document.querySelector(".dot");
@@ -55,4 +57,14 @@ cat.addEventListener("mouseenter", () => {
 });
 cat.addEventListener("mouseleave", () => {
     dot.style.left = "63px";
+});
+
+
+////빈 a태그 올라가지 않게 하기
+const links = document.querySelectorAll('a[href="#"]');
+
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+  });
 });

@@ -11,7 +11,10 @@ window.addEventListener("scroll", () => {
     }
 });
 
-
+//aos
+AOS.init({
+            duration: 1500,
+        });
 
 
 
@@ -218,3 +221,13 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(lineAnimation);
+
+
+//빈 a태그 올라가지 않게 하기
+const links = document.querySelectorAll('a[href="#"]');
+
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+  });
+});

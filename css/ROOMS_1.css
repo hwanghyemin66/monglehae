@@ -14,7 +14,6 @@ img,
 video,
 iframe {
     display: block;
-    max-width: 100%;
 }
 
 ol,
@@ -29,7 +28,6 @@ body {
     /* font-family: 'NostalgicCocochoitoon'; */
     min-width: 1450px;
     line-height: 150%;
-    overflow-x: hidden;
 }
 
 .inner {
@@ -199,7 +197,7 @@ h5 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform:translate(-50%,-50%);
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.47);
     z-index: 99;
 }
@@ -666,12 +664,16 @@ h5 {
 
 
 
-
 /*-------
    푸터
 --------*/
 #footer {
     position: relative;
+    height: 290px;
+    background-color: #4abfcb;
+    box-sizing: border-box;
+    border-top: 2px solid #685F50;
+
 }
 
 #footer .footer_text_box li {
@@ -687,7 +689,7 @@ h5 {
     font-size: 13px;
     font-weight: bold;
     position: relative;
-     padding: 4vw 0 4vw 5vw;
+    padding: 77px 0 77px 96px;
 }
 
 #footer ul {
@@ -702,8 +704,7 @@ h5 {
 .footer_img {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
 
-    width: 100%;
     height: auto;
 }

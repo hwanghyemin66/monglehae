@@ -56,3 +56,14 @@ menus.forEach((menu, index) => {
         dot.style.left = positions[0]; // 다시 멍멍A룸 위치로
     });
 });
+
+
+
+//빈 a태그 올라가지 않게 하기
+const links = document.querySelectorAll('a[href="#"]');
+
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+  });
+});
