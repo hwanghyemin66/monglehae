@@ -239,7 +239,7 @@ h5 {
 .dot {
     position: absolute;
     top: -6px;
-    left: 63px;
+    left: 175px;
 }
 
 .bar_bold_text {
@@ -262,15 +262,11 @@ h5 {
     border-right: none;
 }
 
-.bar_dog_room:hover {
+.bar_dog_room:hover,
+.bar_cat_room:hover,
+.all_room_view:hover{
     font-weight: bold;
 }
-
-.bar_cat_room:hover {
-    font-weight: bold;
-}
-
-
 
 /*-----------------
     dogroom 멍멍룸

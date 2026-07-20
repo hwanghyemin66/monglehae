@@ -73,7 +73,7 @@ observer.observe(information);
 //dot 이동
 const dot = document.querySelector(".dot");
 
-const all = document.querySelector(".bar_bold_text");
+const all = document.querySelector(".all_room_view");
 const dog = document.querySelector(".bar_dog_room");
 const cat = document.querySelector(".bar_cat_room");
 
@@ -81,13 +81,16 @@ const cat = document.querySelector(".bar_cat_room");
 all.addEventListener("mouseenter", () => {
     dot.style.left = "63px";
 });
+all.addEventListener("mouseleave", () => {
+    dot.style.left = "175px";
+});
 
 // 멍멍룸
 dog.addEventListener("mouseenter", () => {
     dot.style.left = "175px";
 });
 dog.addEventListener("mouseleave", () => {
-    dot.style.left = "63px";
+    dot.style.left = "175px";
 });
 
 // 냥냥룸
@@ -95,7 +98,7 @@ cat.addEventListener("mouseenter", () => {
     dot.style.left = "260px";
 });
 cat.addEventListener("mouseleave", () => {
-    dot.style.left = "63px";
+    dot.style.left = "175px";
 });
 
 
