@@ -572,7 +572,7 @@ h5 {
 
 #tour {
     padding: 250px 0 0 0;
-    background-image: url(/images/main_page/tour-background.jpg);
+    background-image: url(../images/main_page/tour-background.jpg);
     position: relative;
 }
 
