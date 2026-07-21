@@ -437,6 +437,8 @@ room guide 룸가이드 룸배치
     background-repeat: repeat-x;
     position: relative;
     padding: 60px 0 120px 0;
+
+    overflow: hidden;
 }
 
 .info_background_top{

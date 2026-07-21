@@ -319,6 +319,8 @@ cafe 카페
 
 #cafe {
     position: relative;
+
+    overflow: hidden;
 }
 
 .line {
